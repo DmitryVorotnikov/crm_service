@@ -4,6 +4,7 @@ psycopg2
 pillow
 ipython
 djangorestframework
+djangorestframework-simplejwt
 django_filter
 django-cors-headers
 flake8
