@@ -1,0 +1,9 @@
+Django
+python-dotenv
+psycopg2
+pillow
+ipython
+djangorestframework
+django_filter
+django-cors-headers
+flake8
