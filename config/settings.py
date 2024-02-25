@@ -173,6 +173,9 @@ REST_FRAMEWORK = {
     )
 }
 # todo добавить настройки для simple-jwt ???
+# User model
+AUTH_USER_MODEL = 'users.User'
+
 # CORS
 CORS_ALLOWED_ORIGINS = [  # Список источников с которых разрешено делать safe-запросы (без CSRF-токена).
     'https://localhost:8000',
