@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     # Packages
     'rest_framework',
+    'drf_yasg',
     'django_filters',
     'corsheaders',
 ]
@@ -185,6 +186,20 @@ SIMPLE_JWT = {
 
 # User model
 AUTH_USER_MODEL = 'users.User'
+
+# Swagger
+SWAGGER_SETTINGS = {  # Для авторизации по токену.
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+        },
+        'basic': {  # Для авторизации username(email)/password.
+            'type': 'basic'
+        }
+    }
+}
 
 # CORS
 CORS_ALLOWED_ORIGINS = [  # Список источников с которых разрешено делать safe-запросы (без CSRF-токена).
