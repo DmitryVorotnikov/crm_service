@@ -27,7 +27,8 @@ urlpatterns = [
     path('api/products/', include('products.urls', namespace='products')),
     # path('api/suppliers/', include('suppliers.urls', namespace='suppliers')),
 
-    # todo А нужны ли вообще урлы пользователю ???
+    # Users
+    path('api/users/', include('users.urls', namespace='users')),
 ]
 
 if settings.DEBUG:
