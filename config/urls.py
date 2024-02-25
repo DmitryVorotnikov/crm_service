@@ -25,7 +25,7 @@ urlpatterns = [
 
     # Apps
     path('api/products/', include('products.urls', namespace='products')),
-    # path('api/suppliers/', include('suppliers.urls', namespace='suppliers')),
+    path('api/suppliers/', include('suppliers.urls', namespace='suppliers')),
 
     # Users
     path('api/users/', include('users.urls', namespace='users')),
