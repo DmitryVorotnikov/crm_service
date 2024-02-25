@@ -1,0 +1,12 @@
+/env
+/htmlcov
+/db.sqlite3
+/.coverage
+/celerybeat-schedule.db
+__pycache__
+.idea
+DRAFT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING_GUIDELINES.md
+LICENSE.md
+README.md
